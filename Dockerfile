@@ -1,3 +1,3 @@
-FROM eclipse-temurin:17
-COPY target/webapps.jar webapps.jar
-CMD ["java","-jar","webapps.jar"]
+FROM eclipse-temurin:17-jre-alpine
+COPY target/webapp.jar webapp.jar
+CMD ["java","-jar","webapp.jar"]
